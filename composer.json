@@ -1,0 +1,26 @@
+{
+    "name": "leonardo/notification_envio",
+    "description": "Envio de email!",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "leonardo",
+            "email": "contato.lvg@hotmail.com",
+			"homepage": "http://www.lvgimportexport.byethost32.com",
+			"role": "Chieff Office Executive"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "6.0.2"
+    },
+	"config": {
+	  "vendor-dir": "lib_ext"
+	},
+	"autoload": {
+	    "psr-4": {
+		   "Notification\\": "_app"
+	   }
+	}
+}
