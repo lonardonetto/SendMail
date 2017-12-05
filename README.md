@@ -7,7 +7,7 @@ Para fazer a instalação da biblioteca, execute o seguinte comando:
 composer require lonardonetto/SendMail
 
 Para fazer o uso da biblioteca, basta requerir o autoload do composer, invocar a classe e fazer a chamada do método:
-
+´´´´sh
 <?php
 
 require __DIR__ . '/vendor/autoload.php';
@@ -18,7 +18,7 @@ $email = new Email(2, "mail.host.com", "your@email.com", "your-pass", "smtp secu
     "from@email.com", "From Name");
 
 $email->sendEmail("SUbject", "Content", "reply@email.com", "Replay Name", "address@email.com", "Address Name");
-
+´´´´´´
 Note que toda a configuração do envio do e-mail estão utilizando o método mágico construtor! Uma vez invocado o método construtor dentro da sua aplicação, seu sistema estará apto a efetuar os disparos.
 
 phpMailer - Lib to send E-mail
